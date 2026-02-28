@@ -1,0 +1,9 @@
+<h2>Add New User</h2>
+
+<form method="POST">
+    {% csrf_token %}
+    Name: <input type="text" name="name"><br><br>
+    Email: <input type="email" name="email"><br><br>
+    Role: <input type="text" name="role"><br><br>
+    <button type="submit">Save</button>
+</form>
